@@ -11,7 +11,7 @@
     "babel-register": "^6.7.2",
     "hapi": "^13.3.0",
     "inert": "^3.2.0",
-    "jimp": "^0.2.22",
+    "jimp": "^0.2.23",
     "winston": "^2.2.0"
   },
   "devDependencies": {
