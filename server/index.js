@@ -18,7 +18,7 @@ server.connection({
 // Inert handles serving static files
 server.register(Inert, () => {});
 
-server.route(routes);
+server.route(routes(process.env.DOMAIN || server.info.uri));
 
 if (!env.test) {
   server.start((err) => {

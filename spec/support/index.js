@@ -10,6 +10,7 @@ export const today = new Date().toISOString().slice(0, 10);
 export const imageName = "example.png";
 export const imagePath = path.join(__dirname, imageName);
 export const uploadedImagePath = path.join(uploadsDir, today, imageName);
+export const fooPath   = path.join(uploadsDir, today, "example-foo.png");
 
 import serverTemp from "../../server";
 import injectThen from "inject-then";

@@ -1,15 +1,14 @@
-import handleUpload from "./handle/upload";
+import handleSlice from "./handle/slice";
+import schema from "./schema";
 
-export default [
+export default (basePath) => [
   {
     method: "POST",
     path: "/",
-    handler: (req, reply) => {
-      const path = handleUpload(req.payload.image);
-      reply(path);
-    },
+    handler: handleSlice(basePath),
     config: {
-      payload: { output: "file" }
+      payload: { output: "file" },
+      validate: { payload: schema }
     }
   },
   {
