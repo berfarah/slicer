@@ -7,7 +7,7 @@ export default (basePath) => [
     path: "/",
     handler: handleSlice(basePath),
     config: {
-      payload: { output: "file" },
+      payload: { output: "file", maxBytes: 5*1024*1024 },
       validate: { payload: schema }
     }
   },
