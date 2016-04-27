@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Get the current month
+this_month=`date +"%Y-%m"`
+echo "Deleting everything not in this month: $this_month"
+
+# Find all folders that aren't this current month
+to_delete=$(ls uploads | grep -v $this_month)
+
+if [ -z "$to_delete" ]; then
+  echo "Nothing to delete"
+  exit 0
+fi
+
+# Delete the folders
+echo "Deleting $to_delete"
+cd uploads && rm -r $to_delete
