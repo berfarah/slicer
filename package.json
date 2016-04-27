@@ -16,9 +16,12 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "form-data": "^1.0.0-rc4",
     "inject-then": "^2.0.5",
     "mocha": "^2.4.5",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "rimraf": "^2.5.2",
+    "stream-to-promise": "^1.1.0"
   },
   "scripts": {
     "test": "NODE_ENV=test mocha --compilers js:babel-register spec --timeout 25000",
