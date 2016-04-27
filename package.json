@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "inject-then": "^2.0.5",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1"
   },
